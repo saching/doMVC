@@ -110,40 +110,54 @@ $this->set(‘limit’, 4);
 <?php echo $limit; ?>
 
 
-$this->setAttribute ('key', $value);
+	$this->setAttribute ('key', $value);
+	
 Method used to set session variables.
 
-$this->getAttribute ('key', $value);
+	$this->getAttribute ('key', $value);
+	
 Method used to get session variable value with index ‘key’. If such passed key is not found in session the default value will be returned with is ‘$value’.
 
-$this->clearAttribute ('key');
+	$this->clearAttribute ('key');
+	
 Method used to remove the session variable.
 
-$this->hasAttribute ('key');
+	$this->hasAttribute ('key');
+	
 Method to check session variable is exists or not.
-$this->getParameter ('key', $value);
+
+	$this->getParameter ('key', $value);
+	
 Method to get ‘GET’ or ‘POST’ parameter, $value will be returned as default value if the ‘key’ index is not found in GET/POST array.
 
-$this->hasParameter ('key');
+	$this->hasParameter ('key');
+	
 This method is used to check whether this parameter is set or not.
 
-$this->redirect ('url');
+	$this->redirect ('url');
+	
 This method used to redirect the current page to another page.
 
-$this->getMethod ();
+	$this->getMethod ();
+	
 This method is used to request method.
 
-$this->isPost();
+	$this->isPost();
+	
 This method is used to check whether it is POST method or not.
 
-$this->setTitle(‘title’);
+	$this->setTitle(‘title’);
+	
 This method is used to set page title.
 
-$this->addCss(‘file’);
+	$this->addCss(‘file’);
+	
 Method used to load separate CSS file.
 
-$this->addJs(‘file’);
+	$this->addJs(‘file’);
+	
 Method used to load separate JS file.
 
-$this->setLayout(‘layoutFile’);
+	$this->setLayout(‘layoutFile’);
+	
 Method to set separate layout for current page. You can disable to layout for the current page using $this->setLayout(false);
