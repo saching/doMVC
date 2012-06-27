@@ -13,23 +13,16 @@ Directory Structure:
 	  --models
 	  --views
 	    ---template
-  
-  ---<folder: Controller Name>
-  
--config
-
--library
-
--tmp
-
--public
-
- --css
- 
- --img
- --js
- --index.php
--.htaccess
+	    ---<folder: Controller Name>
+	-config
+	-library
+	-tmp
+	-public
+	  --css
+	  --img
+	  --js
+	  --index.php
+	-.htaccess
 
 
 application:
