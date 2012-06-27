@@ -70,7 +70,8 @@ The model is a collection of PHP classes that form a software application intend
 	class MyModel extends Model {
 		//write you methods here
 	}
-	
+
+
 views:
 ------
 
