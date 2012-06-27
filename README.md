@@ -23,7 +23,6 @@ Directory Structure:
  --index.php
 -.htaccess
 
-___
 
 application:
 ------------
@@ -99,8 +98,11 @@ Method is useful to load model class or to plug-in for a particular page. You ca
 To load the ‘User’ class you can call.
 $this->load(‘User’); or to load multiple class $this->load(array(‘User’, ‘Profile’));
 
-$this->set('key', $value);
+	$this->set('key', $value);
+	
 Method used to set view variable, using this set method you can push the value to view layer. After that value can be easily accessed in view page.
+
+**E.g.**
 //push the value using in controller actions
 $this->set(‘limit’, 4);
 
