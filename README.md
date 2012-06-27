@@ -7,15 +7,12 @@ Introduction:
 A simple PHP framework, which serves basic libraries, templates and MVC structure in a simple way. It’s light, faster to load and easy to understand.
 
 Directory Structure:
--application
 
- --controllers
-
- --models
- 
- --views
- 
-  ---template
+	-application
+	  --controllers
+	  --models
+	  --views
+	    ---template
   
   ---<folder: Controller Name>
   
