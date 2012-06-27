@@ -89,18 +89,18 @@ Accessible Methods In Controller:
 --------------------------------
 
 Following method will be useful for you while developing your app using doMVC.
-	
-	$this->load($model);
-	
+
 Method is useful to load model class or to plug-in for a particular page. You can load single or multiple model/plug-in class using this method.
 
+	$this->load($model);
+	
 **E.g.**
 To load the ‘User’ class you can call.
 $this->load(‘User’); or to load multiple class $this->load(array(‘User’, ‘Profile’));
 
-	$this->set('key', $value);
-	
 Method used to set view variable, using this set method you can push the value to view layer. After that value can be easily accessed in view page.
+
+	$this->set('key', $value);
 
 **E.g.**
 //push the value using in controller actions
@@ -108,56 +108,59 @@ $this->set(‘limit’, 4);
 
 //access the value in view file
 <?php echo $limit; ?>
-
-
-	$this->setAttribute ('key', $value);
 	
 Method used to set session variables.
 
-	$this->getAttribute ('key', $value);
-	
+	$this->setAttribute ('key', $value);
+
 Method used to get session variable value with index ‘key’. If such passed key is not found in session the default value will be returned with is ‘$value’.
 
-	$this->clearAttribute ('key');
-	
-Method used to remove the session variable.
+	$this->getAttribute ('key', $value);
 
-	$this->hasAttribute ('key');
+Method used to remove the session variable.
+	
+	$this->clearAttribute ('key');
 	
 Method to check session variable is exists or not.
 
-	$this->getParameter ('key', $value);
+	$this->hasAttribute ('key');
 	
 Method to get ‘GET’ or ‘POST’ parameter, $value will be returned as default value if the ‘key’ index is not found in GET/POST array.
 
-	$this->hasParameter ('key');
+	$this->getParameter ('key', $value);
 	
 This method is used to check whether this parameter is set or not.
 
-	$this->redirect ('url');
+	$this->hasParameter ('key');
 	
 This method used to redirect the current page to another page.
 
-	$this->getMethod ();
+	$this->redirect ('url');
 	
 This method is used to request method.
 
-	$this->isPost();
+	$this->getMethod ();
 	
 This method is used to check whether it is POST method or not.
 
-	$this->setTitle(‘title’);
+	$this->isPost();
 	
 This method is used to set page title.
 
-	$this->addCss(‘file’);
+	$this->setTitle(‘title’);
 	
 Method used to load separate CSS file.
 
-	$this->addJs(‘file’);
+	$this->addCss(‘file’);
 	
 Method used to load separate JS file.
 
+	$this->addJs(‘file’);
+
+Method to set separate layout for current page. 
+
 	$this->setLayout(‘layoutFile’);
 	
-Method to set separate layout for current page. You can disable to layout for the current page using $this->setLayout(false);
+You can disable to layout for the current page using 
+	
+	$this->setLayout(false);
