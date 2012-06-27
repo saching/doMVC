@@ -8,7 +8,7 @@ A simple PHP framework, which serves basic libraries, templates and MVC structur
 
 Directory Structure:
 -application
---
+-
  --controllers
  --models
  --views
