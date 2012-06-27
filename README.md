@@ -49,56 +49,53 @@ Note: Save this file in a following format
 <controller-name-in-small-case>.php so the above code will be saved in a file called “mycontroller.php”
 
 **How to add Action in a Controller Class?**
-<?php
-//Represents the Controller class
-Class MyController extends Controller {
 
-	//Represents the action
-	function hello($name = “Guest”) {
-		// your logic will go here
-}
-}
-?>
+	//Represents the Controller class
+	Class MyController extends Controller {
+		//Represents the action
+		function hello($name = “Guest”) {
+			// your logic will go here
+		}
+	}
+
 
 ---
 models:
 ------
+
 The model is a collection of PHP classes that form a software application intended to store, and optionally separate, data. A single front end class that can communicate with any user interface (for example: a console, a graphical user interface, or a web application).
-How to create new Model Class?
-<?php
-//Represents the model class
-class MyModel extends Model {
-	//write you methods here
-}
-?>
+
+**How to create new Model Class?**
+	
+	//Represents the model class
+	class MyModel extends Model {
+		//write you methods here
+	}
+	
 views:
+------
+
 The view renders the model into a form suitable for interaction, typically a user interface element. Multiple views can exist for a single model for different purposes. A view port typically has a one to one correspondence with a display surface and knows how to render to it.
-How to create new view file?
-<?php
-If( i < 10){
-//do your stuff
-}
-?>
+
+**How to create new view file?**
+	
+	If( i < 10){
+	//do your stuff
+	}
+	
 Note: You can create simple php file with html content integrated with php code. You need to save this file as “<action-name>.php” in a folder called “<controller-class-name without ‘controller’ extension>.php”, so above code will be saved as “hello.php” in “my” folder located under “views” folder.
 
 
+Accessible Methods In Controller:
+--------------------------------
 
-
-
-
-
-
-
-
-
-
-	
-
-Methods:
 Following method will be useful for you while developing your app using doMVC.
-$this->load($model);
+	
+	$this->load($model);
+	
 Method is useful to load model class or to plug-in for a particular page. You can load single or multiple model/plug-in class using this method.
-E.g.
+
+**E.g.**
 To load the ‘User’ class you can call.
 $this->load(‘User’); or to load multiple class $this->load(array(‘User’, ‘Profile’));
 
