@@ -1,0 +1,1 @@
+<h2><?php echo $event?> <?php echo $user!=""?$user:"Guest";?>!</h2>
