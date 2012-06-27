@@ -38,12 +38,12 @@ Most of the requests received by an application are handled by an Action.
 An action is basically a Java method that processes the request parameters, and produces a result to be sent to the client.
 
 **How to create new Controller Class?**
-	<?php
+	
 	//Represents the Controller class
 	class MyController extends Controller {
 		//write you actions here
 	}
-	?>
+	
 
 Note: Save this file in a following format
 <controller-name-in-small-case>.php so the above code will be saved in a file called “mycontroller.php”
