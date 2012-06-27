@@ -1,4 +1,4 @@
-doMVC
-=====
+Welcome to "doMVC"
+------------------
 
 PHP light framework.
