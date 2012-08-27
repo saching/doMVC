@@ -63,7 +63,7 @@ class Template {
         $title = $this->_pageTitle;
 		
 		//include common view function library
-        require_once(ROOT . DS . 'library' . DS .  'view.php');
+        require_once(ROOT . DS . 'library' . DS . 'framework' . DS .  'view.php');
         
         $include_header = $this->generateHeader();
         
