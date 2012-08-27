@@ -165,3 +165,20 @@ Method to set separate layout for current page.
 You can disable to layout for the current page using 
 	
 	$this->setLayout(false);
+
+URL routing:
+--------------------------------
+Url routing helps you to add pretty url in your application, below are few examples of url routing.
+
+E.g. 
+You can set  routing rules in config/config.php 
+
+	$routes = array(    
+	    '/' => array('module'=> 'site', 'action'=>'home'),
+	    '/about' => array('module'=> 'site', 'action'=>'about'),
+	    '/contact' => array('module'=> 'site', 'action'=>'contact'),
+	    '/hello/:name' => array('module'=> 'site', 'action'=>'hello'),
+	    '/hello/:name/:event' => array('module'=> 'site', 'action'=>'hello'),
+	    '/hi/:name/:event' => array('module'=> 'site', 'action'=>'hello'),
+	    //add you new rule here  
+	);
