@@ -182,3 +182,9 @@ You can set  routing rules in config/config.php
 	    '/hi/:name/:event' => array('module'=> 'site', 'action'=>'hello'),
 	    //add you new rule here  
 	);
+
+In above example you can see 6 routing rules:
+
+1. '/' shows, how to set home page module and action.
+2. '/about' and '/contact' shows, how to set module and action for short pretty url.
+3. '/hello/:name' and remaining shows, how to pass parameter to page.
